@@ -107,3 +107,26 @@ div.chatSide{
     flex-direction: column;
     justify-content: space-between;
 }
+
+div.messages{
+    background-image: url(../img/mine.jpg);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+div.sentMsg,
+div.recievedMsg{
+    height: 55px;
+    width: 30%;
+    border-radius: 15px;
+}
+
+div.sentMsg{
+    background-color: rgb(213, 249, 186);
+}
+
+div.recievedMsg{
+    background-color: white;
+}

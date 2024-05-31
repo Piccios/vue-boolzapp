@@ -32,11 +32,17 @@
                     <div class="notificationSettings">
                     </div>
                     <div class="contactSrc">
+                        <button>search</button>
+                        <input class="search" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                     <div class="contacts">
                         <ul class="contact">
-                            <li><img :src="${contact.avatar}.jpg" alt="contact_avatar">
-                                <p>${contact.name}</p>
+                            <li v-for="(contact, index) in contacts" :key="index" @click="selectContact(Index)" class="contact-item"><img :src="contact.avatar + '.jpg'" alt="contact_avatar">
+                                <div class="contact-info">
+                                    <p class="contact-name">{{contact.name}}</p>
+                                    <p class="contact-last-message">Ultimo messaggio inviato</p>
+                                </div>
+                                
                             </li>
                         </ul>
                     </div>

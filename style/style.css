@@ -18,9 +18,9 @@ main{
 }
 
 img.headerPic{
-    height: 50px;
+    height: 40px;
     border-radius: 50%;
-    margin: .50rem;
+    margin: .5rem;
 }
 
 div.page{
@@ -28,7 +28,6 @@ div.page{
     bottom: 120px;
     width: 80%;
     height: 900px;
-    border: solid 2px tomato;
     margin: 0 auto;
     min-width: 1120px;
     display: flex;
@@ -48,7 +47,7 @@ div.user{
 div.sideBar{
     width: 30%;
     height: 100%;
-    border: solid 2px tomato;
+    border-right: solid 1px rgb(206, 202, 202);
 }
 
 input.search{
@@ -60,7 +59,7 @@ input.search{
 
 div.contacts{
     background-color: white;
-    height: 711px;
+    height: 715px;
 }
 
 ul.contact{
@@ -101,7 +100,6 @@ div.inputsBar{
 div.chatSide{
     width: 70%;
     height: 100%;
-    border: solid 2px tomato;
     background-color: white;
     display: flex;
     flex-direction: column;

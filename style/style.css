@@ -10,7 +10,6 @@ header{
     background-color: rgb(0, 150, 136);
 }
 
-
 div.page{
     position: relative;
     bottom: 120px;
@@ -19,4 +18,41 @@ div.page{
     border: solid 2px tomato;
     margin: 0 auto;
     min-width: 1120px;
+    display: flex;
+}
+
+div.sideBar{
+    width: 30%;
+    height: 100%;
+    border: solid 2px tomato;
+}
+
+div.notificationSettings{
+    height: 70px;
+    background-color: rgb(142, 218, 252);
+}
+div.userBar,
+div.contactBar{
+    height: 70px;
+    background-color: rgb(225, 225, 225);
+}
+
+div.contactSrc{
+    height: 45px;
+    background-color: rgb(225, 225, 225);
+}
+
+div.inputsBar{
+    height: 70px;
+    background-color: rgb(243, 238, 234);
+}
+
+div.chat{
+    width: 70%;
+    height: 100%;
+    border: solid 2px tomato;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

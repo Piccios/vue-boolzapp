@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>vue-boolzapp</title>
 </head>
@@ -14,20 +17,38 @@
             <div class="page">
                 <div class="sideBar">
                     <div class="userBar">
+                        <div class="user">
+                            <img class="headerPic" src="./img/avatar_io.jpg" alt="user_pic">
+                            <p>Sofia</p>
+                        </div>
+                        <div class="icons">
+                            icon
+                            icon
+                            icon
+                        </div>
+                        
+
                     </div>
                     <div class="notificationSettings">
-
                     </div>
                     <div class="contactSrc">
+                    </div>
+                    <div class="contacts">
+                        <ul class="contact">
+                            <li><img :src="${contact.avatar}.jpg" alt="contact_avatar">
+                                <p>${contact.name}</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="chatSide">
+                    <div class="contactBar">
+                    </div>
+                    <div class="messages">
                         
                     </div>
-                </div>
-                <div class="chat">
-                    <div class="contactBar">
-
-                    </div>
                     <div class="inputsBar">
-
                     </div>
                 </div>
             </div>

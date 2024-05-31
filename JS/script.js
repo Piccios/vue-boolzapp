@@ -3,19 +3,10 @@ const { createApp } = Vue
 createApp({
 data() {
 return {
-    
-}
-}
-}).mount('#app')
-
-
-
-// Contacts list
-
-contacts: [
+    contacts: [
     {
         name: 'Michele',
-        avatar: './img/avatar_1.jpg',
+        avatar: './img/avatar_1',
         visible: true,
         messages: [
             {
@@ -37,7 +28,7 @@ contacts: [
     },
     {
         name: 'Fabio',
-        avatar: './img/avatar_2.jpg',
+        avatar: './img/avatar_2',
         visible: true,
         messages: [
             {
@@ -59,7 +50,7 @@ contacts: [
     },
     {
         name: 'Samuele',
-        avatar: './img/avatar_3.jpg',
+        avatar: './img/avatar_3',
         visible: true,
         messages: [
             {
@@ -81,7 +72,7 @@ contacts: [
     },
     {
         name: 'Alessandro B.',
-        avatar: './img/avatar_4.jpg',
+        avatar: './img/avatar_4',
         visible: true,
         messages: [
             {
@@ -98,7 +89,7 @@ contacts: [
     },
     {
         name: 'Alessandro L.',
-        avatar: './img/avatar_5.jpg',
+        avatar: './img/avatar_5',
         visible: true,
         messages: [
             {
@@ -115,7 +106,7 @@ contacts: [
     },
     {
         name: 'Claudia',
-        avatar: './img/avatar_6.jpg',
+        avatar: './img/avatar_6',
         visible: true,
         messages: [
             {
@@ -137,7 +128,7 @@ contacts: [
     },
     {
         name: 'Federico',
-        avatar: './img/avatar_7.jpg',
+        avatar: './img/avatar_7',
         visible: true,
         messages: [
             {
@@ -154,7 +145,7 @@ contacts: [
     },
     {
         name: 'Davide',
-        avatar: './img/avatar_8.jpg',
+        avatar: './img/avatar_8',
         visible: true,
         messages: [
             {
@@ -175,3 +166,12 @@ contacts: [
         ],
     }
 ]
+
+}
+}
+}).mount('#app')
+
+
+
+// Contacts list
+

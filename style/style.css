@@ -3,11 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
 
 header{
     height: 150px;
     width: 100%;
     background-color: rgb(0, 150, 136);
+}
+
+main{
+    background-color: rgb(217, 219, 213);
+}
+
+img.headerPic{
+    height: 50px;
+    border-radius: 50%;
+    margin: .50rem;
 }
 
 div.page{
@@ -21,16 +34,39 @@ div.page{
     display: flex;
 }
 
+div.userBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.user{
+    display: flex;
+    align-items: center;
+}
+
 div.sideBar{
     width: 30%;
     height: 100%;
     border: solid 2px tomato;
 }
 
+div.contacts{
+    background-color: white;
+    height: 711px;
+}
+
+ul.contact{
+    height: 70px;
+    border-top: solid 1px rgb(73, 73, 73);
+    opacity: 20%;
+}
+
 div.notificationSettings{
     height: 70px;
     background-color: rgb(142, 218, 252);
 }
+
 div.userBar,
 div.contactBar{
     height: 70px;
@@ -47,7 +83,7 @@ div.inputsBar{
     background-color: rgb(243, 238, 234);
 }
 
-div.chat{
+div.chatSide{
     width: 70%;
     height: 100%;
     border: solid 2px tomato;

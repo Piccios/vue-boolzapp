@@ -37,10 +37,17 @@
 
 
                     </div>
-                    <div class="notificationSettings">
+                    <div class="notificationSettings d-flex">
+                        <div class="notificationBell">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div class="notificationInfo">
+                            <p>ricevi notifiche di nuovi messaggi</p>
+                            <p class="link">attiva notifiche desktop</p>
+                        </div>
                     </div>
                     <div class="contactSrc">
-                        <button>search</button>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         <input class="search" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                     <div class="contacts">
@@ -50,7 +57,7 @@
                                 <img :src="contact.avatar + '.jpg'" alt="contact_avatar" class="contact-avatar">
                                 <div class="contact-info">
                                     <p class="contact-name">{{contact.name}}</p>
-                                    <p class="contact-last-message">Ultimo messaggio inviato</p>
+                                    <p class="contact-last-message lightText">Ultimo messaggio inviato</p>
                                 </div>
 
                             </li>
@@ -60,8 +67,17 @@
                 </div>
                 <div class="chatSide" v-if="activeContact">
                     <div class="contactBar d-flex">
-                        <div class="chatContact">
+                        <div class="chatContact d-flex">
                             <img class="headerPic" :src="activeContact.avatar + '.jpg'" alt="user_pic">
+                            <div class="contact_info">
+                                <p>
+                                    {{activeContact.name}}
+                                </p>
+                                <p class="lightText">
+                                    Ultimo accesso oggi alle 12:00
+                                </p>
+                            </div>
+
                         </div>
                         <div class="icons">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -83,14 +99,14 @@
                         </div>
 
                     </div>
-<div class="inputsBar d-flex">
-                    <i class="fa-regular fa-face-smile"></i>
-                    <input type="text" class="input-chat" placeholder="Scrivi un messaggio">
-                    <i class="fa-solid fa-microphone"></i>
-                </div>
+                    <div class="inputsBar d-flex">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <input type="text" class="input-chat" placeholder="Scrivi un messaggio">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
 
                 </div>
-                
+
             </div>
 
             </div>

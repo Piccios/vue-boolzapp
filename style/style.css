@@ -12,6 +12,11 @@ i{
     cursor: pointer;
 }
 
+.lightText{
+    color: rgb(177, 177, 177);
+    font-size: .80rem;
+}
+
 .d-flex{
     display: flex;
 }
@@ -20,6 +25,10 @@ header{
     height: 150px;
     width: 100%;
     background-color: rgb(0, 150, 136);
+}
+
+div.page{
+    box-shadow: 2px 2px 5px rgb(116, 116, 116)
 }
 
 main{
@@ -32,12 +41,53 @@ img.headerPic{
     margin: .5rem;
 }
 
+div.notificationSettings{
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+div.notificationBell{
+    background-color: white;
+    padding: .66rem;
+    border-radius: 50%;
+    color: rgb(142, 218, 252);
+    font-size: 1rem;
+}
+
+.notificationInfo{
+    margin-left: .66rem;
+}
+
+p.link{
+    color: grey;
+    font-size: .77rem;
+    text-decoration: underline;
+}
+
 div.contact-info{
     padding: .33rem .5rem;
 }
 
 div.contact-info p.contact-last-message{
     color: rgb(177, 177, 177);
+}
+
+div.contactSrc{
+    border: none;
+    border-radius: 100px;
+    padding-left: 1rem;
+}
+
+div.contactSrc > button{
+    border: none;
+    width: 15%;
+    color: rgb(177, 177, 177);
+    border-right: solid 1px rgb(206, 202, 202);
+}
+
+input.search{
+    border: none;
+    padding-left: 1rem;
 }
 
 .contact-item{
@@ -146,6 +196,10 @@ div.chatSide{
 div.contactBar{
     align-items: center;
     justify-content: space-between;
+}
+
+div.contact_info{
+    margin: .66rem ;
 }
 
 div.messages{

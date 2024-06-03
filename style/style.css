@@ -61,8 +61,10 @@ div.userBar{
 }
 
 div.icons i{
-    margin-right: .5rem;
-    color: rgb(177, 177, 177)
+    margin-right: .66rem;
+    color: rgb(177, 177, 177);
+    padding: .33rem;
+    font-size: 1.33rem;
 }
 
 div.user{

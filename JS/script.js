@@ -177,5 +177,5 @@ createApp({
 
 
 
-// Contacts list
+
 

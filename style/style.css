@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Lato', sans-serif;
+}
+
+i{
+    cursor: pointer;
 }
 
 .d-flex{
@@ -96,7 +101,6 @@ div.contacts{
 
 ul.contact{
     height: 70px;
-    border-top: solid 1px rgb(73, 73, 73);
 }
 
 div.notificationSettings{
@@ -146,24 +150,29 @@ div.messages{
     background-image: url(../img/mine.jpg);
     height: 100%;
     padding: 3rem 4rem;
-    flex-wrap: wrap;
+
 }
 
 .leftMsg,
 .rightMsg{
-    border: solid 1px tomato;
     width: 100%;
     height: 60px;
+    margin-top: 1rem;
 }
+
 .rightMsg{
     justify-content: end;
 }
 
 div.sentMsg,
 div.recievedMsg{
-    height: 55px;
+    display: inline-block;
+    word-wrap: break-word;
+    min-height: 60px;
     width: 40%;
     border-radius: 15px;
+    align-items: center;
+    padding: 1rem; 
 }
 
 div.sentMsg{

@@ -152,7 +152,6 @@ div.messages{
     background-image: url(../img/mine.jpg);
     height: 100%;
     padding: 3rem 4rem;
-
 }
 
 .leftMsg,
@@ -160,6 +159,7 @@ div.messages{
     width: 100%;
     height: 60px;
     margin-top: 1rem;
+    align-items: center;
 }
 
 .rightMsg{

@@ -165,7 +165,8 @@ createApp({
                         }
                     ]
                 }
-            ], activeContact: null
+            ], activeContact: null,
+            newMessage: ''
         }
     },
     mounted(){
@@ -176,6 +177,26 @@ createApp({
     methods: {
         selectContact(index) {
             this.activeContact = this.contacts[index];
+        }
+    },
+    sendMessage() {
+        if (this.NewMessage.trim() !== ''){
+            this.activeContact.messages.push({
+                message: this.newMessage,
+                status: 'sent'
+            });
+            this.newMessage = '';
+            this.receiveMessage();
+        }
+    },
+    components: {
+        receiveMessage(){
+            setTimeout(() => {
+                this.activeContact.messages.push({
+                    message: 'ok',
+                    status: 'received'
+                });
+            }, 1000);
         }
     }
 }).mount('#app')

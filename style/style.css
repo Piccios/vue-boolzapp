@@ -21,6 +21,10 @@ i{
     display: flex;
 }
 
+.z-index{
+    z-index: 2;
+}
+
 header{
     height: 150px;
     width: 100%;
@@ -64,14 +68,6 @@ p.link{
     text-decoration: underline;
 }
 
-div.contact-info{
-    padding: .33rem .5rem;
-}
-
-div.contact-info p.contact-last-message{
-    color: rgb(177, 177, 177);
-}
-
 div.contactSrc{
     border: none;
     border-radius: 100px;
@@ -89,6 +85,15 @@ input.search{
     border: none;
     padding-left: 1rem;
 }
+
+div.contact-info{
+    padding: .33rem .5rem;
+}
+
+div.contact-info p.contact-last-message{
+    color: rgb(177, 177, 177);
+}
+
 
 .contact-item{
     display: flex;
@@ -191,6 +196,15 @@ div.chatSide{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+div.emptyChat{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(0, 150, 136);
+    margin: 8rem auto;
 }
 
 div.contactBar{

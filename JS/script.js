@@ -167,7 +167,13 @@ createApp({
                 }
             ], activeContact: null
         }
-    }, methods: {
+    },
+    mounted(){
+        if (this.contacts.length > 0){
+            this.activeContact = this.contacts[0];
+        }
+    },
+    methods: {
         selectContact(index) {
             this.activeContact = this.contacts[index];
         }

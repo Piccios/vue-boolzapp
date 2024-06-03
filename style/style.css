@@ -18,9 +18,30 @@ main{
 }
 
 img.headerPic{
-    height: 40px;
+    height: 45px;
     border-radius: 50%;
     margin: .5rem;
+}
+
+div.contact-info{
+    padding: .33rem .5rem;
+}
+
+div.contact-info p.contact-last-message{
+    color: rgb(177, 177, 177);
+}
+
+.contact-item{
+    display: flex;
+    padding: .5rem;
+    border: solid 1px #cecaca67;
+}
+
+img.contact-avatar{
+    height: 60px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    margin: .2rem;
 }
 
 div.page{
@@ -37,6 +58,11 @@ div.userBar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+div.icons i{
+    margin-right: .5rem;
+    color: rgb(177, 177, 177)
 }
 
 div.user{
@@ -65,7 +91,7 @@ div.contacts{
 ul.contact{
     height: 70px;
     border-top: solid 1px rgb(73, 73, 73);
-    opacity: 20%;
+    /* opacity: 20%; */
 }
 
 div.notificationSettings{

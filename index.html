@@ -24,9 +24,9 @@
                             <p>Sofia</p>
                         </div>
                         <div class="icons">
-                            icon
-                            icon
-                            icon
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-message"></i>
                         </div>
                         
 
@@ -39,7 +39,7 @@
                     </div>
                     <div class="contacts">
                         <ul class="contact">
-                            <li v-for="(contact, index) in contacts" :key="index" @click="selectContact(index)" class="contact-item"><img :src="contact.avatar + '.jpg'" alt="contact_avatar">
+                            <li v-for="(contact, index) in contacts" :key="index" @click="selectContact(index)" class="contact-item"><img :src="contact.avatar + '.jpg'" alt="contact_avatar" class="contact-avatar">
                                 <div class="contact-info">
                                     <p class="contact-name">{{contact.name}}</p>
                                     <p class="contact-last-message">Ultimo messaggio inviato</p>

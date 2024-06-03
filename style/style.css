@@ -85,6 +85,7 @@ div.sideBar{
     width: 40%;
     height: 100%;
     border-right: solid 1px rgb(206, 202, 202);
+
 }
 
 input.search{
@@ -97,6 +98,7 @@ input.search{
 div.contacts{
     background-color: white;
     height: 715px;
+    overflow-y: visible;
 }
 
 ul.contact{

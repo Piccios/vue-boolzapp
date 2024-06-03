@@ -46,8 +46,8 @@
                     <div class="contacts">
                         <ul class="contact">
                             <li v-for="(contact, index) in contacts" :key="index" @click="selectContact(index)"
-                                class="contact-item"><img :src="contact.avatar + '.jpg'" alt="contact_avatar"
-                                    class="contact-avatar">
+                                class="contact-item">
+                                <img :src="contact.avatar + '.jpg'" alt="contact_avatar" class="contact-avatar">
                                 <div class="contact-info">
                                     <p class="contact-name">{{contact.name}}</p>
                                     <p class="contact-last-message">Ultimo messaggio inviato</p>
@@ -58,42 +58,45 @@
                     </div>
 
                 </div>
-                <div class="chatSide">
+                <div class="chatSide" v-if="activeContact">
                     <div class="contactBar d-flex">
                         <div class="chatContact">
-                            <img class="headerPic" :src='' alt="user_pic">
+                            <img class="headerPic" :src="activeContact.avatar + '.jpg'" alt="user_pic">
                         </div>
-                        <div class="icons"><i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
 
                     </div>
                     <div class="messages">
-                        <div class="rightMsg d-flex">
-                            <div class="sentMsg">
+                        <div v-for="message in activeContact.messages" :key="message.date"
+                            :class="{'rightMsg': message.status === 'sent', 'leftMsg': message.status === 'received'}"
+                            class="d-flex">
+                            <div class="sentMsg" v-if="message.status === 'sent'">
+                                <p>{{message.message}}</p>
+                            </div>
+                            <div class="recievedMsg" v-else>
+                                <p>{{ message.message }}</p>
                             </div>
                         </div>
-                        <div class="rightMsg d-flex">
-                            <div class="sentMsg ">
-                                <p>text
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="leftMsg">
-                            <div class="recievedMsg">
-                            </div>
-                        </div>
-
 
                     </div>
-                    <div class="inputsBar d-flex">
-                        <i class="fa-regular fa-face-smile"></i>
-                        <input type="text" class="input-chat" placeholder="Scrivi un messaggio">
-                        <i class="fa-solid fa-microphone"></i>
+
+                    <div class="leftMsg">
+                        <div class="recievedMsg">
+                        </div>
                     </div>
+
+
                 </div>
+                <div class="inputsBar d-flex">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <input type="text" class="input-chat" placeholder="Scrivi un messaggio">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+            </div>
 
             </div>
             </div>

@@ -166,11 +166,10 @@ createApp({
                     ]
                 }
             ], activeContact: null
-
         }
     }, methods: {
         selectContact(index) {
-            this.activeContact = index
+            this.activeContact = this.contacts[index];
         }
     }
 }).mount('#app')

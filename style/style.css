@@ -94,11 +94,16 @@ div.contact-info p.contact-last-message{
     color: rgb(177, 177, 177);
 }
 
-
 .contact-item{
     display: flex;
     padding: .5rem;
     border: solid 1px #cecaca67;
+    
+}
+
+.contact-item:hover{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
 }
 
 img.contact-avatar{

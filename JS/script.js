@@ -177,26 +177,26 @@ createApp({
     methods: {
         selectContact(index) {
             this.activeContact = this.contacts[index];
-        }
-    },
+        },
     sendMessage() {
-        if (this.NewMessage.trim() !== ''){
-            this.activeContact.messages.push({
+        if (this.newMessage.trim() !== ''){
+            const newMsg = {   
+                date: new Date().toLocaleString('it-IT'),
                 message: this.newMessage,
                 status: 'sent'
-            });
+            };
+            this.activeContact.messages.push(newMsg);
             this.newMessage = '';
-            this.receiveMessage();
+            setTimeout(this.receiveMessage, 1000);
         }
     },
-    components: {
-        receiveMessage(){
-            setTimeout(() => {
-                this.activeContact.messages.push({
-                    message: 'ok',
-                    status: 'received'
-                });
-            }, 1000);
+    receiveMessage(){
+        const newMsg = {
+            date: new Date().toLocaleString('it-IT'),
+            message: 'ok!',
+            status:'received'
+        };
+        this.activeContact.messages.push(newMsg);
         }
     }
 }).mount('#app')

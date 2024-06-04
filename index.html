@@ -100,8 +100,7 @@
                     </div>
                     <div class="inputsBar d-flex" v-if="activeContact">
                         <i class="fa-regular fa-face-smile"></i>
-                        <input type="text" class="input-chat" v-model='newMessage' placeholder="Scrivi un messaggio">
-                        <i class="fa-solid fa-paper-plane" @click="sendMessage"></i>
+                        <input type="text" class="input-chat" v-model='newMessage' placeholder="Scrivi un messaggio" @keyup.enter="sendMessage">
                         </i>
                         <i class="fa-solid fa-microphone"></i>
                     </div>

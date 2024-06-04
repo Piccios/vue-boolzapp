@@ -46,11 +46,11 @@
                     </div>
                     <div class="contactSrc">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input class="search" type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input class="search" type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchQuery">
                     </div>
                     <div class="contacts">
                         <ul class="contact">
-                            <li v-for="(contact, index) in contacts" :key="index" @click="selectContact(index)"
+                            <li v-for="(contact, index) in contactSrc" :key="index" @click="selectContact(index)"
                                 class="contact-item">
                                 <img :src="contact.avatar + '.jpg'" alt="contact_avatar" class="contact-avatar">
                                 <div class="contact-info">

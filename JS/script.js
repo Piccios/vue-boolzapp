@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            searchQuery: '',   
             contacts: [
                 {
                     name: 'Michele',
@@ -197,6 +198,13 @@ createApp({
             status:'received'
         };
         this.activeContact.messages.push(newMsg);
+        }
+    },
+    computed: {
+        contactSrc(){
+            return this.contacts.filter(contact =>
+                contact.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+            );
         }
     }
 }).mount('#app')

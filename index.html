@@ -57,15 +57,12 @@
                                     <p class="contact-name">{{contact.name}}</p>
                                     <p class="contact-last-message lightText">Ultimo messaggio inviato</p>
                                 </div>
-
                             </li>
                         </ul>
                     </div>
-
                 </div>
                 <div class="chatSide">
-                    
-                    <div class="contactBar d-flex" v-if="activeContact" >
+                    <div class="contactBar d-flex" v-if="activeContact">
                         <div class="chatContact d-flex">
                             <img class="headerPic" :src="activeContact.avatar + '.jpg'" alt="user_pic">
                             <div class="contact_info">
@@ -76,14 +73,12 @@
                                     Ultimo accesso oggi alle 12:00
                                 </p>
                             </div>
-
                         </div>
                         <div class="icons">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
-
                     </div>
                     <div class="messages" v-if="activeContact">
                         <div v-for="message in activeContact.messages" :key="message.date"
@@ -96,20 +91,15 @@
                                 <p>{{ message.message }}</p>
                             </div>
                         </div>
-
                     </div>
                     <div class="inputsBar d-flex" v-if="activeContact">
                         <i class="fa-regular fa-face-smile"></i>
-                        <input type="text" class="input-chat" v-model='newMessage' placeholder="Scrivi un messaggio" @keyup.enter="sendMessage">
+                        <input type="text" class="input-chat" v-model='newMessage' placeholder="Scrivi un messaggio"
+                            @keyup.enter="sendMessage">
                         </i>
                         <i class="fa-solid fa-microphone"></i>
                     </div>
-
                 </div>
-
-            </div>
-
-            </div>
             </div>
         </section>
     </main>

@@ -51,12 +51,14 @@
                     <div class="contacts">
                         <ul class="contact">
                             <li v-for="(contact, index) in contactSrc" :key="index" @click="selectContact(index)"
-                                class="contact-item">
-                                <img :src="contact.avatar + '.jpg'" alt="contact_avatar" class="contact-avatar">
+                                class="contact-item d-flex">
+                                <div class="d-flex"><img :src="contact.avatar + '.jpg'" alt="contact_avatar" class="contact-avatar">
                                 <div class="contact-info">
                                     <p class="contact-name">{{contact.name}}</p>
                                     <p class="contact-last-message lightText">Ultimo messaggio inviato</p>
-                                </div>
+                                </div></div>
+                                
+                                <div class="lightText">12:00</div>
                             </li>
                         </ul>
                     </div>
@@ -86,9 +88,11 @@
                             class="d-flex">
                             <div class="sentMsg" v-if="message.status === 'sent'">
                                 <p>{{message.message}}</p>
+                                <div class="time">{{message.date}}</div>
                             </div>
                             <div class="recievedMsg" v-else>
                                 <p>{{ message.message }}</p>
+                                <div class="time">{{message.date}}</div>
                             </div>
                         </div>
                     </div>
@@ -104,6 +108,7 @@
         </section>
     </main>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js "></script>
     <script src="./JS/script.js"></script>
 
 </body>

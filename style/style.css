@@ -95,9 +95,9 @@ div.contact-info p.contact-last-message{
 }
 
 .contact-item{
-    display: flex;
     padding: .5rem;
     border: solid 1px #cecaca67;
+    justify-content: space-between;
     
 }
 
@@ -203,14 +203,6 @@ div.chatSide{
     justify-content: space-between;
 }
 
-div.emptyChat{
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-decoration: underline;
-    font-style: italic;
-    color: rgb(0, 150, 136);
-    margin: 8rem auto;
-}
 
 div.contactBar{
     align-items: center;
@@ -218,13 +210,15 @@ div.contactBar{
 }
 
 div.contact_info{
-    margin: .66rem ;
+    margin: .66rem;
 }
+
 
 div.messages{
     background-image: url(../img/mine.jpg);
     height: 100%;
     padding: 3rem 4rem;
+    overflow-y: scroll;
 }
 
 .leftMsg,
@@ -247,7 +241,7 @@ div.recievedMsg{
     width: 40%;
     border-radius: 15px;
     align-items: center;
-    padding: 1rem; 
+    padding: 1rem .5rem .5rem .5rem; 
     box-shadow: 2px 2px 5px rgb(116, 116, 116)
 }
 
@@ -257,6 +251,13 @@ div.sentMsg{
 
 div.recievedMsg{
     background-color: white;
+}
+
+div.time{
+    color: rgb(177, 177, 177);
+    font-size: .7rem;
+    text-align: end;
+    ;
 }
 
 div.inputsBar{
